@@ -39,7 +39,7 @@ foreach($db as $record)
 
 // Insert a new record and get the id or false
 $id = $db->insert(array('lorem','ipsum','dolor','sit','amet');
-if(!$id) trigger_error("Failed to insert new record into file', E_USER_ERROR);
+if(!$id) trigger_error("Failed to insert new record into file", E_USER_ERROR);
 
 // Update recently created with new content
 $db->update($id, 'John Doe|johndoe@gmail.com|Client|10');
